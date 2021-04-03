@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Mono:wght@300&display=swap');
+:root{
+    --primario:#6B9DD4;
+    --secundario:#D46BD2;
+    --terciario:#D4A26B;
+    --cuaternario:#6BD46E;
+    --titulos:'Montserrat';
+    --cuerpo:'Roboto Mono';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--cuerpo);
+    font-size: 16px;
+}
+
+.what{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3vh;
+    right: 0;
+    margin: 20px;
+    background-size: cover;
+    box-shadow: 2px 0 10px 0px rgba(129, 129, 129, 0.61);
+    z-index: 10;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.teleg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15vh;
+
+    right: 0px;
+    margin: 20px;
+    background-size: cover;
+    box-shadow: 2px 0 10px 1px rgba(129, 129, 129, 0.61);
+    z-index: 10;
+}
+
+.logo2{width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* No olvides suscribirte a AlexCG Design */
+/*
+Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG Design
+		esta plantilla es libre para usar, así como otras plantillas más que tenemos en el canal...
+		->>>> https://www.youtube.com/alexcgdesign <<<<-
+*/
+/* Header */
+
+header {
+    
+    width: 100%;
+    height: 650px;
+    background-image: url(../Imagenes/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: left;
+}
+
+.logo-investing{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+}
+
+
+.investing{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+}
+header .textos {
+    margin: 152px 0 0 30px;
+}
+
+header .titulo {
+    font-size: 85px;
+    font-family: var(--titulos);
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-family: var(--cuerpo);
+}
+
+header .boton {
+  
+        display: inline-block;
+        padding: 8px;
+        width: 150px;
+       
+        font-weight: 300;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 16px;
+        margin-top: 15px;
+        font-family: var(--cuerpo);
+
+}
+
+header .boton:hover{
+    background: rgba(167, 167, 167, 0.226);
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+/* Main */
+.acerca-de{
+    width: 90%;
+    justify-content: center;
+
+    margin: 42px auto ;
+    
+}
+
+.ilustracion{
+    width:45%;
+
+}
+
+
+.sobreNosotros{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.sobreNosotros .contenedor{
+    width: 50%;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+
+    font-weight: 300;
+    font-family: var(--titulos);
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+  
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+    font-family: var(--cuerpo);
+    margin-bottom: 15px;
+}
+
+
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+ 
+    background-size: cover;
+    background-position: 20% 20%;   
+   
+
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 53%; 
+}
+
+
+.acerca-de .planDeInversion{
+    padding-top: 30px;
+    border-top: 1px rgba(143, 143, 143, 0.514) solid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.imagen-inversion{
+    width: 90%;
+}
+
+.imagen-inversion img{
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-sobre-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.fondo{
+    background: var(--primario);
+    padding: 35vh 0;
+
+    background: -webkit-linear-gradient(to bottom, #6b9ed4cc, rgba(54, 59, 68, 0.603)), url(../Imagenes/trading.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6b9ed4cc, rgba(54, 59, 68, 0.603)), url(../Imagenes/trading.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    overflow: hidden;
+    color: #fff;
+    text-align: left;
+}
+
+.plan-recompensa{
+    z-index: -1;
+}
+.plan-recompensa .sesgoarriba,.sesgoabajo{
+    z-index: 0;
+}
+
+.plan-recompensa .contenedor{
+    z-index: -1;
+    width: 60%;
+    max-width: none;
+    color: #fff;
+}
+
+.plan-recompensa .contenedor .parrafo{
+    color: #fff;
+}
+
+.plan-recompensa .parrafo a{
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.plan-recompensa .contenedor span{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 39px;
+    height: 39px;
+    padding: auto 5px;
+    margin: 0 10px 0 5px;
+}
+
+.plan-recompensa .subtitulo{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-family: var(--cuerpo);
+
+}
+
+.pasos{
+    margin-top: 30px ;
+}
+
+.pasos .subtitulo{
+    margin: 5px;
+    padding: 0;
+}
+
+.exito{
+    margin: 30px 0px;
+ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap ;
+
+  
+}
+ 
+.exito .texto-exito{
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-family: var(--titulos);
+  width: 50%;
+ 
+  
+}
+
+.exito .texto-exito p{
+    margin-bottom: 40px;
+
+}
+
+.imagen-exito{
+    width: 30%;
+
+
+}
+
+
+
+.texto-exito .boton{
+    font-family: var(--cuerpo);
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;    
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin: auto;
+    padding: 5px;
+    width: 250px;
+    height: 60px;
+    text-align: center; 
+    border-radius: 50px;
+    border: 1px solid #46464679;
+   
+    
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+    box-shadow: 3px 0 #4383C9 inset,
+                -3px 0 #4383C9 inset ;
+}
+
+.texto-exito .boton:hover{
+    color: #fff;                 
+    box-shadow: 250px 0 #4383C9 inset,
+                -250px 0 #4383C9 inset ;
+    border:none;
+    
+}
+
+
+/* Footer */
+
+footer{
+    background: var(--primario);
+    font-family: var(--titulos);
+    width: 100%;
+    padding: 0.1px;
+    margin-top: 20px ;
+    height: 300px;
+    
+    padding-top: 5vh;
+
+} 
+
+footer .contenedor{
+    max-width: none;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.copy{
+     font-size: 50px;
+     font-weight: 300;
+     padding: 10px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+     width: 90%;
+     margin: auto;
+     
+     color: #fff;
+     
+ }
+
+
+ 
+ .sociales{
+     width: 95%;
+     text-align: initial;
+     font-size: 32px;
+     margin-left: 5% ;
+     display: flex;
+     
+ }
+ .sociales a{
+
+     
+
+     text-decoration: none;
+     color: #fff;
+     
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     margin-left: 5px;
+   
+     border-radius: 50%;
+
+ }
+
+ .sociales a:hover{
+    color: #4383C9;
+    background: rgba(255, 255, 255, 0.856);
+
+
+ }
+
+
+ /*rESPONSIVE*/
+@media screen and (max-width:900px){
+    .sobreNosotros .ilustracion{
+        width:55%;
+    }
+    .sobreNosotros .contenedor{
+        width: 95%;
+    }
+
+    .sobre-nosotros{
+        margin-bottom: 20px;
+    }
+
+
+    .plan-recompensa .contenedor{
+        width: 70%;
+    }
+    
+ 
+
+   .exito .texto-exito{
+       font-size: 30px;
+       width: 30%;
+   }
+
+.texto-exito .boton{
+    
+    font-size: 20px;
+    
+    width: 180px;
+    height: 40px;
+
+   
+
+}
+}
+
+@media screen and (max-width:750px){
+    .sobre-nosotros{
+        font-size: 50px;
+    }
+    .ilustracion{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:670px){
+    .none{
+        display:none ;
+    }
+    .imagenes{
+        width: 33.3%;
+    }
+    .pasos .subtitulo{
+        font-size: 20px ;
+    }
+}
+
+@media screen and (max-width:550px){
+    .what{
+        width: 45px;
+        height: 45px;
+    }
+    .teleg{
+        width: 45px;
+        height: 45px;
+    }
+    header .titulo{
+        font-size: 50px;
+    }
+    header .subtitulo{
+        font-size: 25px;
+    }
+    header .boton{
+        font-size: 13px;
+        width: 100px;
+    }
+ 
+    .sobre-nosotros{
+        font-size:30px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+
+    .exito .texto-exito{
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .texto-exito .boton{
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+    }
+    .copy{
+        text-align: center;
+        font-size: 35px;
+    
+    }
+    
+    .sobreNosotros .ilustracion{
+        width: 80%;
+    }
+
+ 
+
+}
+
+@media screen and (max-width:415px){
+    .texto-exito .boton{
+        font-size: 13px;
+        width: 130px;
+        height: 25px;
+    }
+    .exito .texto-exito{
+        font-size: 15px;
+    }
+    .plan-recompensa .contenedor span{
+        width: 30px;
+        height: 30px;
+        padding: auto 3px;
+    }
+}
+
+@media screen and (max-width:365px){
+    header .titulo{
+        font-size: 40px;
+    }
+    header .subtitulo{
+        font-size: 20px;
+    }
+    .dnone{
+        display: none;
+    }
+    .imagenes{
+        width: 100%;
+        height: 500px;
+    }
+    .copy{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:325px){
+    .imagen-exito{
+        display: none;
+    }
+    .exito .texto-exito{
+        width: 90%;
+    }
+}
+@media screen and (max-width:260px){
+    header{
+        height: 600px;
+    }
+    .sociales{
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-height:730px){
+    header{
+      height: 750px;
+    }
+}
+@media screen and (min-height:1000px){
+    header{
+        height: 800px;
+    }
+}
+@media screen and (min-height:1000px){
+    header{
+        height: 900px;
+    }
+    .galeria .sesgoarriba,.galeria .sesgoabajo{
+        display: none;
+    }
+}
+@media screen and (max-height:550px){
+    .teleg{
+        bottom: 17vh;
+    }
+}
+@media screen and (max-height:460px){
+    .teleg{
+        bottom: 25vh;
+    }
+}
+
+@media screen and (max-height:290px){
+    .teleg{
+        bottom: 35vh;
+        
+    }
+
+}
